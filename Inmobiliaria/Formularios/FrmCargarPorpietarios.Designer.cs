@@ -67,144 +67,156 @@ namespace Inmobiliaria.Formularios
             // LblNombre
             // 
             this.LblNombre.AutoSize = true;
+            this.LblNombre.Font = new System.Drawing.Font("Sitka Display", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.LblNombre.Location = new System.Drawing.Point(56, 69);
             this.LblNombre.Name = "LblNombre";
-            this.LblNombre.Size = new System.Drawing.Size(51, 15);
+            this.LblNombre.Size = new System.Drawing.Size(62, 23);
             this.LblNombre.TabIndex = 0;
             this.LblNombre.Text = "Nombre";
             // 
             // LblApellido
             // 
             this.LblApellido.AutoSize = true;
-            this.LblApellido.Location = new System.Drawing.Point(56, 135);
+            this.LblApellido.Font = new System.Drawing.Font("Sitka Display", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.LblApellido.Location = new System.Drawing.Point(56, 116);
             this.LblApellido.Name = "LblApellido";
-            this.LblApellido.Size = new System.Drawing.Size(51, 15);
+            this.LblApellido.Size = new System.Drawing.Size(62, 23);
             this.LblApellido.TabIndex = 1;
             this.LblApellido.Text = "Apellido";
             // 
             // LblDireccion
             // 
             this.LblDireccion.AutoSize = true;
-            this.LblDireccion.Location = new System.Drawing.Point(56, 189);
+            this.LblDireccion.Font = new System.Drawing.Font("Sitka Display", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.LblDireccion.Location = new System.Drawing.Point(56, 167);
             this.LblDireccion.Name = "LblDireccion";
-            this.LblDireccion.Size = new System.Drawing.Size(58, 15);
+            this.LblDireccion.Size = new System.Drawing.Size(71, 23);
             this.LblDireccion.TabIndex = 2;
             this.LblDireccion.Text = "Domicilio";
             // 
             // LblCuilCuit
             // 
             this.LblCuilCuit.AutoSize = true;
-            this.LblCuilCuit.Location = new System.Drawing.Point(56, 279);
+            this.LblCuilCuit.Font = new System.Drawing.Font("Sitka Display", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.LblCuilCuit.Location = new System.Drawing.Point(56, 275);
             this.LblCuilCuit.Name = "LblCuilCuit";
-            this.LblCuilCuit.Size = new System.Drawing.Size(28, 15);
+            this.LblCuilCuit.Size = new System.Drawing.Size(35, 23);
             this.LblCuilCuit.TabIndex = 3;
             this.LblCuilCuit.Text = "Cuil";
             // 
             // LblEmail
             // 
             this.LblEmail.AutoSize = true;
-            this.LblEmail.Location = new System.Drawing.Point(507, 189);
+            this.LblEmail.Font = new System.Drawing.Font("Sitka Display", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.LblEmail.Location = new System.Drawing.Point(482, 167);
             this.LblEmail.Name = "LblEmail";
-            this.LblEmail.Size = new System.Drawing.Size(93, 15);
+            this.LblEmail.Size = new System.Drawing.Size(116, 23);
             this.LblEmail.TabIndex = 4;
             this.LblEmail.Text = "Email (opcional)";
             // 
             // LblDni
             // 
             this.LblDni.AutoSize = true;
-            this.LblDni.Location = new System.Drawing.Point(56, 243);
+            this.LblDni.Font = new System.Drawing.Font("Sitka Display", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.LblDni.Location = new System.Drawing.Point(56, 223);
             this.LblDni.Name = "LblDni";
-            this.LblDni.Size = new System.Drawing.Size(25, 15);
+            this.LblDni.Size = new System.Drawing.Size(32, 23);
             this.LblDni.TabIndex = 5;
             this.LblDni.Text = "Dni";
             // 
             // LblSexo
             // 
             this.LblSexo.AutoSize = true;
-            this.LblSexo.Location = new System.Drawing.Point(507, 135);
+            this.LblSexo.Font = new System.Drawing.Font("Sitka Display", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.LblSexo.Location = new System.Drawing.Point(482, 116);
             this.LblSexo.Name = "LblSexo";
-            this.LblSexo.Size = new System.Drawing.Size(91, 15);
+            this.LblSexo.Size = new System.Drawing.Size(111, 23);
             this.LblSexo.TabIndex = 6;
             this.LblSexo.Text = "Sexo (Opcional)";
             // 
             // LblOpcional
             // 
             this.LblOpcional.AutoSize = true;
-            this.LblOpcional.Location = new System.Drawing.Point(507, 243);
+            this.LblOpcional.Font = new System.Drawing.Font("Sitka Display", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.LblOpcional.Location = new System.Drawing.Point(481, 223);
             this.LblOpcional.Name = "LblOpcional";
-            this.LblOpcional.Size = new System.Drawing.Size(123, 15);
+            this.LblOpcional.Size = new System.Drawing.Size(151, 23);
             this.LblOpcional.TabIndex = 7;
             this.LblOpcional.Text = "Estado civil (opcional)";
             // 
             // LblLocalida
             // 
             this.LblLocalida.AutoSize = true;
-            this.LblLocalida.Location = new System.Drawing.Point(507, 292);
+            this.LblLocalida.Font = new System.Drawing.Font("Sitka Display", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.LblLocalida.Location = new System.Drawing.Point(482, 279);
             this.LblLocalida.Name = "LblLocalida";
-            this.LblLocalida.Size = new System.Drawing.Size(58, 15);
+            this.LblLocalida.Size = new System.Drawing.Size(70, 23);
             this.LblLocalida.TabIndex = 8;
             this.LblLocalida.Text = "Localidad";
             // 
             // LblIva
             // 
             this.LblIva.AutoSize = true;
-            this.LblIva.Location = new System.Drawing.Point(501, 351);
+            this.LblIva.Font = new System.Drawing.Font("Sitka Display", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.LblIva.Location = new System.Drawing.Point(481, 333);
             this.LblIva.Name = "LblIva";
-            this.LblIva.Size = new System.Drawing.Size(128, 15);
+            this.LblIva.Size = new System.Drawing.Size(156, 23);
             this.LblIva.TabIndex = 9;
             this.LblIva.Text = "Condicion frente al IVA";
             // 
             // LblTelefono
             // 
             this.LblTelefono.AutoSize = true;
-            this.LblTelefono.Location = new System.Drawing.Point(507, 69);
+            this.LblTelefono.Font = new System.Drawing.Font("Sitka Display", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.LblTelefono.Location = new System.Drawing.Point(481, 69);
             this.LblTelefono.Name = "LblTelefono";
-            this.LblTelefono.Size = new System.Drawing.Size(52, 15);
+            this.LblTelefono.Size = new System.Drawing.Size(65, 23);
             this.LblTelefono.TabIndex = 10;
             this.LblTelefono.Text = "Telefono";
             // 
             // LblFechaNacimiento
             // 
             this.LblFechaNacimiento.AutoSize = true;
-            this.LblFechaNacimiento.Location = new System.Drawing.Point(56, 351);
+            this.LblFechaNacimiento.Font = new System.Drawing.Font("Sitka Display", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.LblFechaNacimiento.Location = new System.Drawing.Point(56, 360);
             this.LblFechaNacimiento.Name = "LblFechaNacimiento";
-            this.LblFechaNacimiento.Size = new System.Drawing.Size(117, 15);
+            this.LblFechaNacimiento.Size = new System.Drawing.Size(139, 23);
             this.LblFechaNacimiento.TabIndex = 11;
             this.LblFechaNacimiento.Text = "Fecha de nacimiento";
             // 
             // TxtNombre
             // 
-            this.TxtNombre.Location = new System.Drawing.Point(201, 61);
+            this.TxtNombre.Location = new System.Drawing.Point(201, 69);
             this.TxtNombre.Name = "TxtNombre";
-            this.TxtNombre.Size = new System.Drawing.Size(100, 23);
+            this.TxtNombre.Size = new System.Drawing.Size(165, 23);
             this.TxtNombre.TabIndex = 0;
             // 
             // TxtLocalidad
             // 
-            this.TxtLocalidad.Location = new System.Drawing.Point(650, 289);
+            this.TxtLocalidad.Location = new System.Drawing.Point(661, 279);
             this.TxtLocalidad.Name = "TxtLocalidad";
-            this.TxtLocalidad.Size = new System.Drawing.Size(100, 23);
+            this.TxtLocalidad.Size = new System.Drawing.Size(121, 23);
             this.TxtLocalidad.TabIndex = 11;
             // 
             // TxtDomicilio
             // 
-            this.TxtDomicilio.Location = new System.Drawing.Point(201, 181);
+            this.TxtDomicilio.Location = new System.Drawing.Point(201, 167);
             this.TxtDomicilio.Name = "TxtDomicilio";
-            this.TxtDomicilio.Size = new System.Drawing.Size(100, 23);
+            this.TxtDomicilio.Size = new System.Drawing.Size(165, 23);
             this.TxtDomicilio.TabIndex = 2;
             // 
             // TxtApellido
             // 
-            this.TxtApellido.Location = new System.Drawing.Point(201, 127);
+            this.TxtApellido.Location = new System.Drawing.Point(201, 116);
             this.TxtApellido.Name = "TxtApellido";
-            this.TxtApellido.Size = new System.Drawing.Size(100, 23);
+            this.TxtApellido.Size = new System.Drawing.Size(165, 23);
             this.TxtApellido.TabIndex = 1;
             // 
             // TxtEmail
             // 
-            this.TxtEmail.Location = new System.Drawing.Point(650, 186);
+            this.TxtEmail.Location = new System.Drawing.Point(661, 167);
             this.TxtEmail.Name = "TxtEmail";
-            this.TxtEmail.Size = new System.Drawing.Size(100, 23);
+            this.TxtEmail.Size = new System.Drawing.Size(121, 23);
             this.TxtEmail.TabIndex = 9;
             // 
             // LblPrincipal
@@ -219,10 +231,10 @@ namespace Inmobiliaria.Formularios
             // 
             // BtnGuardar
             // 
-            this.BtnGuardar.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.BtnGuardar.Location = new System.Drawing.Point(201, 393);
+            this.BtnGuardar.Font = new System.Drawing.Font("Sitka Display", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.BtnGuardar.Location = new System.Drawing.Point(580, 391);
             this.BtnGuardar.Name = "BtnGuardar";
-            this.BtnGuardar.Size = new System.Drawing.Size(75, 23);
+            this.BtnGuardar.Size = new System.Drawing.Size(92, 35);
             this.BtnGuardar.TabIndex = 13;
             this.BtnGuardar.Text = "Guardar";
             this.BtnGuardar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -231,10 +243,10 @@ namespace Inmobiliaria.Formularios
             // 
             // BtnCancelar
             // 
-            this.BtnCancelar.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.BtnCancelar.Location = new System.Drawing.Point(507, 393);
+            this.BtnCancelar.Font = new System.Drawing.Font("Sitka Display", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.BtnCancelar.Location = new System.Drawing.Point(678, 391);
             this.BtnCancelar.Name = "BtnCancelar";
-            this.BtnCancelar.Size = new System.Drawing.Size(75, 23);
+            this.BtnCancelar.Size = new System.Drawing.Size(92, 35);
             this.BtnCancelar.TabIndex = 14;
             this.BtnCancelar.Text = "Cancelar";
             this.BtnCancelar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -243,52 +255,52 @@ namespace Inmobiliaria.Formularios
             // 
             // NumDni
             // 
-            this.NumDni.Location = new System.Drawing.Point(201, 234);
+            this.NumDni.Location = new System.Drawing.Point(201, 223);
             this.NumDni.Maximum = new decimal(new int[] {
             999999999,
             0,
             0,
             0});
             this.NumDni.Name = "NumDni";
-            this.NumDni.Size = new System.Drawing.Size(120, 23);
+            this.NumDni.Size = new System.Drawing.Size(165, 23);
             this.NumDni.TabIndex = 3;
             // 
             // NumCuil
             // 
-            this.NumCuil.Location = new System.Drawing.Point(201, 279);
+            this.NumCuil.Location = new System.Drawing.Point(201, 275);
             this.NumCuil.Maximum = new decimal(new int[] {
             -727379969,
             232,
             0,
             0});
             this.NumCuil.Name = "NumCuil";
-            this.NumCuil.Size = new System.Drawing.Size(120, 23);
+            this.NumCuil.Size = new System.Drawing.Size(165, 23);
             this.NumCuil.TabIndex = 4;
             // 
             // NumTelefono
             // 
-            this.NumTelefono.Location = new System.Drawing.Point(650, 62);
+            this.NumTelefono.Location = new System.Drawing.Point(661, 69);
             this.NumTelefono.Maximum = new decimal(new int[] {
             1410065407,
             2,
             0,
             0});
             this.NumTelefono.Name = "NumTelefono";
-            this.NumTelefono.Size = new System.Drawing.Size(120, 23);
+            this.NumTelefono.Size = new System.Drawing.Size(121, 23);
             this.NumTelefono.TabIndex = 7;
             // 
             // DateTimeNacimiento
             // 
             this.DateTimeNacimiento.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.DateTimeNacimiento.Location = new System.Drawing.Point(201, 342);
+            this.DateTimeNacimiento.Location = new System.Drawing.Point(201, 360);
             this.DateTimeNacimiento.Name = "DateTimeNacimiento";
-            this.DateTimeNacimiento.Size = new System.Drawing.Size(200, 23);
+            this.DateTimeNacimiento.Size = new System.Drawing.Size(165, 23);
             this.DateTimeNacimiento.TabIndex = 6;
             // 
             // CboSexo
             // 
             this.CboSexo.FormattingEnabled = true;
-            this.CboSexo.Location = new System.Drawing.Point(650, 135);
+            this.CboSexo.Location = new System.Drawing.Point(661, 116);
             this.CboSexo.Name = "CboSexo";
             this.CboSexo.Size = new System.Drawing.Size(121, 23);
             this.CboSexo.TabIndex = 8;
@@ -296,7 +308,7 @@ namespace Inmobiliaria.Formularios
             // CboIva
             // 
             this.CboIva.FormattingEnabled = true;
-            this.CboIva.Location = new System.Drawing.Point(650, 345);
+            this.CboIva.Location = new System.Drawing.Point(661, 333);
             this.CboIva.Name = "CboIva";
             this.CboIva.Size = new System.Drawing.Size(121, 23);
             this.CboIva.TabIndex = 12;
@@ -304,7 +316,7 @@ namespace Inmobiliaria.Formularios
             // CboEstadoCivil
             // 
             this.CboEstadoCivil.FormattingEnabled = true;
-            this.CboEstadoCivil.Location = new System.Drawing.Point(650, 243);
+            this.CboEstadoCivil.Location = new System.Drawing.Point(661, 223);
             this.CboEstadoCivil.Name = "CboEstadoCivil";
             this.CboEstadoCivil.Size = new System.Drawing.Size(121, 23);
             this.CboEstadoCivil.TabIndex = 10;
@@ -312,9 +324,10 @@ namespace Inmobiliaria.Formularios
             // LblCuit
             // 
             this.LblCuit.AutoSize = true;
-            this.LblCuit.Location = new System.Drawing.Point(56, 318);
+            this.LblCuit.Font = new System.Drawing.Font("Sitka Display", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.LblCuit.Location = new System.Drawing.Point(56, 313);
             this.LblCuit.Name = "LblCuit";
-            this.LblCuit.Size = new System.Drawing.Size(29, 15);
+            this.LblCuit.Size = new System.Drawing.Size(36, 23);
             this.LblCuit.TabIndex = 28;
             this.LblCuit.Text = "Cuit";
             // 
@@ -327,13 +340,14 @@ namespace Inmobiliaria.Formularios
             0,
             0});
             this.NumCuit.Name = "NumCuit";
-            this.NumCuit.Size = new System.Drawing.Size(120, 23);
+            this.NumCuit.Size = new System.Drawing.Size(165, 23);
             this.NumCuit.TabIndex = 5;
             // 
             // FrmCargarPropietario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.NumCuit);
             this.Controls.Add(this.LblCuit);

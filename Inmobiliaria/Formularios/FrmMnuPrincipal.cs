@@ -53,5 +53,11 @@ namespace Inmobiliaria
             var frmVerEditarPropiedades = new FrmVerEditarPropiedad();
             frmVerEditarPropiedades.ShowDialog();
         }
+
+        private void SubMnuListClientes_Click(object sender, EventArgs e)
+        {
+            var frmListadoClientes = new FrmListadoClientes();
+            frmListadoClientes.ShowDialog();
+        }
     }
 }

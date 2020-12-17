@@ -125,5 +125,7 @@ namespace Inmobiliaria.Formularios
             }
             this.Close();
         }
+
+        
     }
 }

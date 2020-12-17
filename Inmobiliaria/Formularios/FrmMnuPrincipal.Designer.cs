@@ -29,6 +29,7 @@ namespace Inmobiliaria
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMnuPrincipal));
             this.BtnCargaCliente = new System.Windows.Forms.Button();
             this.BtnPropietarios = new System.Windows.Forms.Button();
             this.BtnPropiedades = new System.Windows.Forms.Button();
@@ -37,14 +38,17 @@ namespace Inmobiliaria
             this.SubMnuClientes = new System.Windows.Forms.ToolStripMenuItem();
             this.SubMnuPropietarios = new System.Windows.Forms.ToolStripMenuItem();
             this.SubMnuPropiedades = new System.Windows.Forms.ToolStripMenuItem();
+            this.MnuListado = new System.Windows.Forms.ToolStripMenuItem();
+            this.SubMnuListClientes = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // BtnCargaCliente
             // 
-            this.BtnCargaCliente.Location = new System.Drawing.Point(39, 135);
+            this.BtnCargaCliente.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.BtnCargaCliente.Location = new System.Drawing.Point(618, 30);
             this.BtnCargaCliente.Name = "BtnCargaCliente";
-            this.BtnCargaCliente.Size = new System.Drawing.Size(137, 25);
+            this.BtnCargaCliente.Size = new System.Drawing.Size(154, 34);
             this.BtnCargaCliente.TabIndex = 0;
             this.BtnCargaCliente.Text = "Cargar Clientes";
             this.BtnCargaCliente.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -53,9 +57,10 @@ namespace Inmobiliaria
             // 
             // BtnPropietarios
             // 
-            this.BtnPropietarios.Location = new System.Drawing.Point(39, 197);
+            this.BtnPropietarios.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.BtnPropietarios.Location = new System.Drawing.Point(618, 92);
             this.BtnPropietarios.Name = "BtnPropietarios";
-            this.BtnPropietarios.Size = new System.Drawing.Size(137, 26);
+            this.BtnPropietarios.Size = new System.Drawing.Size(154, 34);
             this.BtnPropietarios.TabIndex = 1;
             this.BtnPropietarios.Text = "Cargar Propietarios";
             this.BtnPropietarios.UseVisualStyleBackColor = true;
@@ -63,9 +68,10 @@ namespace Inmobiliaria
             // 
             // BtnPropiedades
             // 
-            this.BtnPropiedades.Location = new System.Drawing.Point(39, 262);
+            this.BtnPropiedades.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.BtnPropiedades.Location = new System.Drawing.Point(618, 160);
             this.BtnPropiedades.Name = "BtnPropiedades";
-            this.BtnPropiedades.Size = new System.Drawing.Size(137, 26);
+            this.BtnPropiedades.Size = new System.Drawing.Size(154, 34);
             this.BtnPropiedades.TabIndex = 2;
             this.BtnPropiedades.Text = "Cargar propiedades";
             this.BtnPropiedades.UseVisualStyleBackColor = true;
@@ -73,11 +79,14 @@ namespace Inmobiliaria
             // 
             // menuStrip1
             // 
+            this.menuStrip1.BackColor = System.Drawing.Color.Transparent;
+            this.menuStrip1.Font = new System.Drawing.Font("Times New Roman", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.MnuVerEditar});
+            this.MnuVerEditar,
+            this.MnuListado});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(800, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(800, 27);
             this.menuStrip1.TabIndex = 3;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -88,40 +97,58 @@ namespace Inmobiliaria
             this.SubMnuPropietarios,
             this.SubMnuPropiedades});
             this.MnuVerEditar.Name = "MnuVerEditar";
-            this.MnuVerEditar.Size = new System.Drawing.Size(70, 20);
+            this.MnuVerEditar.Size = new System.Drawing.Size(90, 23);
             this.MnuVerEditar.Text = "Ver/Editar";
             // 
             // SubMnuClientes
             // 
             this.SubMnuClientes.Name = "SubMnuClientes";
-            this.SubMnuClientes.Size = new System.Drawing.Size(139, 22);
+            this.SubMnuClientes.Size = new System.Drawing.Size(160, 24);
             this.SubMnuClientes.Text = "Clientes";
             this.SubMnuClientes.Click += new System.EventHandler(this.SubMnuClientes_Click);
             // 
             // SubMnuPropietarios
             // 
             this.SubMnuPropietarios.Name = "SubMnuPropietarios";
-            this.SubMnuPropietarios.Size = new System.Drawing.Size(139, 22);
+            this.SubMnuPropietarios.Size = new System.Drawing.Size(160, 24);
             this.SubMnuPropietarios.Text = "Porpietarios";
             this.SubMnuPropietarios.Click += new System.EventHandler(this.SubMnuPropietarios_Click);
             // 
             // SubMnuPropiedades
             // 
             this.SubMnuPropiedades.Name = "SubMnuPropiedades";
-            this.SubMnuPropiedades.Size = new System.Drawing.Size(139, 22);
+            this.SubMnuPropiedades.Size = new System.Drawing.Size(160, 24);
             this.SubMnuPropiedades.Text = "Propiedades";
             this.SubMnuPropiedades.Click += new System.EventHandler(this.SubMnuPropiedades_Click);
+            // 
+            // MnuListado
+            // 
+            this.MnuListado.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.SubMnuListClientes});
+            this.MnuListado.Name = "MnuListado";
+            this.MnuListado.Size = new System.Drawing.Size(71, 23);
+            this.MnuListado.Text = "Listado";
+            // 
+            // SubMnuListClientes
+            // 
+            this.SubMnuListClientes.Name = "SubMnuListClientes";
+            this.SubMnuListClientes.Size = new System.Drawing.Size(133, 24);
+            this.SubMnuListClientes.Text = "Clientes";
+            this.SubMnuListClientes.Click += new System.EventHandler(this.SubMnuListClientes_Click);
             // 
             // FrmMnuPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.BtnPropiedades);
             this.Controls.Add(this.BtnPropietarios);
             this.Controls.Add(this.BtnCargaCliente);
             this.Controls.Add(this.menuStrip1);
+            this.DoubleBuffered = true;
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "FrmMnuPrincipal";
             this.ShowIcon = false;
@@ -143,6 +170,8 @@ namespace Inmobiliaria
         private System.Windows.Forms.ToolStripMenuItem SubMnuClientes;
         private System.Windows.Forms.ToolStripMenuItem SubMnuPropietarios;
         private System.Windows.Forms.ToolStripMenuItem SubMnuPropiedades;
+        private System.Windows.Forms.ToolStripMenuItem MnuListado;
+        private System.Windows.Forms.ToolStripMenuItem SubMnuListClientes;
     }
 }
 

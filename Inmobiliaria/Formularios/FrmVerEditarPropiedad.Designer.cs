@@ -39,6 +39,7 @@ namespace Inmobiliaria.Formularios
             // 
             // BtnEliminar
             // 
+            this.BtnEliminar.Font = new System.Drawing.Font("Sitka Display", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.BtnEliminar.Location = new System.Drawing.Point(327, 330);
             this.BtnEliminar.Name = "BtnEliminar";
             this.BtnEliminar.Size = new System.Drawing.Size(117, 49);
@@ -49,6 +50,7 @@ namespace Inmobiliaria.Formularios
             // 
             // BtnSalir
             // 
+            this.BtnSalir.Font = new System.Drawing.Font("Sitka Display", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.BtnSalir.Location = new System.Drawing.Point(651, 330);
             this.BtnSalir.Name = "BtnSalir";
             this.BtnSalir.Size = new System.Drawing.Size(117, 49);
@@ -59,6 +61,7 @@ namespace Inmobiliaria.Formularios
             // 
             // BtnEditar
             // 
+            this.BtnEditar.Font = new System.Drawing.Font("Sitka Display", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.BtnEditar.Location = new System.Drawing.Point(182, 330);
             this.BtnEditar.Name = "BtnEditar";
             this.BtnEditar.Size = new System.Drawing.Size(117, 49);
@@ -69,6 +72,7 @@ namespace Inmobiliaria.Formularios
             // 
             // BtnNuevo
             // 
+            this.BtnNuevo.Font = new System.Drawing.Font("Sitka Display", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.BtnNuevo.Location = new System.Drawing.Point(33, 330);
             this.BtnNuevo.Name = "BtnNuevo";
             this.BtnNuevo.Size = new System.Drawing.Size(117, 49);
@@ -93,6 +97,7 @@ namespace Inmobiliaria.Formularios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.BtnEliminar);
             this.Controls.Add(this.BtnSalir);
