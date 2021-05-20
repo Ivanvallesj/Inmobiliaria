@@ -34,13 +34,15 @@ namespace Inmobiliaria.Formularios
             this.BtnEditar = new System.Windows.Forms.Button();
             this.BtnNuevo = new System.Windows.Forms.Button();
             this.DataGrid = new System.Windows.Forms.DataGridView();
+            this.LblBuscador = new System.Windows.Forms.Label();
+            this.TextBoxBuscador = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.DataGrid)).BeginInit();
             this.SuspendLayout();
             // 
             // BtnEliminar
             // 
             this.BtnEliminar.Font = new System.Drawing.Font("Sitka Display", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.BtnEliminar.Location = new System.Drawing.Point(327, 330);
+            this.BtnEliminar.Location = new System.Drawing.Point(326, 375);
             this.BtnEliminar.Name = "BtnEliminar";
             this.BtnEliminar.Size = new System.Drawing.Size(117, 49);
             this.BtnEliminar.TabIndex = 9;
@@ -51,7 +53,7 @@ namespace Inmobiliaria.Formularios
             // BtnSalir
             // 
             this.BtnSalir.Font = new System.Drawing.Font("Sitka Display", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.BtnSalir.Location = new System.Drawing.Point(651, 330);
+            this.BtnSalir.Location = new System.Drawing.Point(650, 375);
             this.BtnSalir.Name = "BtnSalir";
             this.BtnSalir.Size = new System.Drawing.Size(117, 49);
             this.BtnSalir.TabIndex = 8;
@@ -62,7 +64,7 @@ namespace Inmobiliaria.Formularios
             // BtnEditar
             // 
             this.BtnEditar.Font = new System.Drawing.Font("Sitka Display", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.BtnEditar.Location = new System.Drawing.Point(182, 330);
+            this.BtnEditar.Location = new System.Drawing.Point(181, 375);
             this.BtnEditar.Name = "BtnEditar";
             this.BtnEditar.Size = new System.Drawing.Size(117, 49);
             this.BtnEditar.TabIndex = 7;
@@ -73,7 +75,7 @@ namespace Inmobiliaria.Formularios
             // BtnNuevo
             // 
             this.BtnNuevo.Font = new System.Drawing.Font("Sitka Display", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.BtnNuevo.Location = new System.Drawing.Point(33, 330);
+            this.BtnNuevo.Location = new System.Drawing.Point(32, 375);
             this.BtnNuevo.Name = "BtnNuevo";
             this.BtnNuevo.Size = new System.Drawing.Size(117, 49);
             this.BtnNuevo.TabIndex = 6;
@@ -93,12 +95,32 @@ namespace Inmobiliaria.Formularios
             this.DataGrid.Size = new System.Drawing.Size(735, 216);
             this.DataGrid.TabIndex = 5;
             // 
+            // LblBuscador
+            // 
+            this.LblBuscador.AutoSize = true;
+            this.LblBuscador.Font = new System.Drawing.Font("Sitka Display", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
+            this.LblBuscador.Location = new System.Drawing.Point(34, 323);
+            this.LblBuscador.Name = "LblBuscador";
+            this.LblBuscador.Size = new System.Drawing.Size(52, 23);
+            this.LblBuscador.TabIndex = 11;
+            this.LblBuscador.Text = "Buscar";
+            // 
+            // TextBoxBuscador
+            // 
+            this.TextBoxBuscador.Location = new System.Drawing.Point(92, 323);
+            this.TextBoxBuscador.Name = "TextBoxBuscador";
+            this.TextBoxBuscador.Size = new System.Drawing.Size(262, 23);
+            this.TextBoxBuscador.TabIndex = 10;
+            this.TextBoxBuscador.TextChanged += new System.EventHandler(this.TextBoxBuscador_TextChanged);
+            // 
             // FrmVerEditarPropiedad
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.LblBuscador);
+            this.Controls.Add(this.TextBoxBuscador);
             this.Controls.Add(this.BtnEliminar);
             this.Controls.Add(this.BtnSalir);
             this.Controls.Add(this.BtnEditar);
@@ -108,6 +130,7 @@ namespace Inmobiliaria.Formularios
             this.Text = "Ver y editar propiedades";
             ((System.ComponentModel.ISupportInitialize)(this.DataGrid)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -118,5 +141,7 @@ namespace Inmobiliaria.Formularios
         private System.Windows.Forms.Button BtnEditar;
         private System.Windows.Forms.Button BtnNuevo;
         private System.Windows.Forms.DataGridView DataGrid;
+        private System.Windows.Forms.Label LblBuscador;
+        private System.Windows.Forms.TextBox TextBoxBuscador;
     }
 }

@@ -43,6 +43,7 @@ namespace Inmobiliaria.Formularios
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Listado de clientes";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.FrmListadoClientes_Load);
             this.ResumeLayout(false);
 

@@ -140,3 +140,4 @@ C:\AppInmobiliaria\Inmobiliaria\Inmobiliaria\bin\Debug\netcoreapp3.1\zh-CHT\Micr
 C:\AppInmobiliaria\Inmobiliaria\Inmobiliaria\bin\Debug\netcoreapp3.1\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
 C:\AppInmobiliaria\Inmobiliaria\Inmobiliaria\bin\Debug\netcoreapp3.1\zh-CHT\Microsoft.ReportViewer.Design.resources.dll
 C:\AppInmobiliaria\Inmobiliaria\Inmobiliaria\bin\Debug\netcoreapp3.1\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+C:\AppInmobiliaria\Inmobiliaria\Inmobiliaria\obj\Debug\netcoreapp3.1\Inmobiliaria.Formularios.FrmCompraAlquiler.resources

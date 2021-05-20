@@ -13,7 +13,7 @@ namespace Inmobiliaria.Models
         [Required]
         public string Apellido { get; set; }
         [Required]
-        public double Dni { get; set; }
+        public int Dni { get; set; }
         [Required]
         public double Cuil { get; set; }
         [Required]

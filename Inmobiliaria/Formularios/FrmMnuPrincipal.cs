@@ -59,5 +59,16 @@ namespace Inmobiliaria
             var frmListadoClientes = new FrmListadoClientes();
             frmListadoClientes.ShowDialog();
         }
+
+        private void MnuItemSalir_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void BtnAlquilerVenta_Click(object sender, EventArgs e)
+        {
+            var frmCompraAalquiler = new FrmCompraAlquiler();
+            frmCompraAalquiler.ShowDialog();
+        }
     }
 }

@@ -208,6 +208,7 @@ namespace Inmobiliaria.Formularios
             this.MinimizeBox = false;
             this.Name = "FrmCargarPropiedades";
             this.ShowIcon = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Carga de propiedades";
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownValorPropiedad)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

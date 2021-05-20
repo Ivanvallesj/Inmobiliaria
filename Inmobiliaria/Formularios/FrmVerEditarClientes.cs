@@ -39,6 +39,27 @@ namespace Inmobiliaria.Formularios
             }
         }
 
+        private void ActualizarGrilla(string TextoBuscar)
+        {
+            using (var db = new InmobiliariaContext())
+            {
+                var MostrarClientes = from cliente in db.Clientes
+                                      select new
+                                      {
+                                          Id = cliente.Id,
+                                          Nombre = cliente.Apellido + "" + cliente.Nombre,
+                                          Dni = cliente.Dni,
+                                          Telefono = cliente.Telefono,
+                                          Localidad = cliente.Localidad,
+                                          Domicilio = cliente.Domicilio
+
+                                      };
+                DataGrid.DataSource = MostrarClientes.Where(t => t.Nombre.Contains(TextoBuscar) || t.Dni.ToString().Contains(TextoBuscar)).ToList();
+
+
+            }
+        }
+
         private void BtnSalir_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -48,6 +69,8 @@ namespace Inmobiliaria.Formularios
         {
             var frmCargarCliente = new FrmCargarCliente();
             frmCargarCliente.ShowDialog();
+            ActualizarGrilla();
+            DataGrid.CurrentCell = DataGrid.Rows[DataGrid.RowCount - 1].Cells[0];
         }
 
         private void BtnEditar_Click(object sender, EventArgs e)
@@ -90,6 +113,11 @@ namespace Inmobiliaria.Formularios
                 }
                 ActualizarGrilla();
             }
+        }
+
+        private void TextBoxBuscador_TextChanged(object sender, EventArgs e)
+        {
+            ActualizarGrilla(TextBoxBuscador.Text);
         }
     }
 }

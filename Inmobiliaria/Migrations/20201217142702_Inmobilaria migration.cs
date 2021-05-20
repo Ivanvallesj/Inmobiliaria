@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace Inmobiliaria.Migrations
 {
-    public partial class MigracionInmbiliariaDebu : Migration
+    public partial class Inmobilariamigration : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -40,7 +40,7 @@ namespace Inmobiliaria.Migrations
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Nombre = table.Column<string>(nullable: false),
                     Apellido = table.Column<string>(nullable: false),
-                    Dni = table.Column<double>(nullable: false),
+                    Dni = table.Column<int>(nullable: false),
                     Cuil = table.Column<double>(nullable: false),
                     Cuit = table.Column<double>(nullable: false),
                     FechaNacimiento = table.Column<DateTime>(nullable: false),
@@ -134,7 +134,7 @@ namespace Inmobiliaria.Migrations
             migrationBuilder.InsertData(
                 table: "Propietario",
                 columns: new[] { "Id", "Apellido", "CondicionIva", "Cuil", "Cuit", "Dni", "Domicilio", "Email", "EstadoCivil", "FechaNacimiento", "Localidad", "Nombre", "Sexo", "Telefono" },
-                values: new object[] { 1, "Parra", 2, 20361962595.0, 0.0, 36196259.0, "Juan Peron Y urquiza", "inmobiliariajuliandaniel@gmail.com", 1, new DateTime(1992, 1, 10, 0, 0, 0, 0, DateTimeKind.Unspecified), "San Justo", "Julian", 1, 3498526969.0 });
+                values: new object[] { 1, "Parra", 2, 20361962595.0, 0.0, 36196259, "Juan Peron Y urquiza", "inmobiliariajuliandaniel@gmail.com", 1, new DateTime(1992, 1, 10, 0, 0, 0, 0, DateTimeKind.Unspecified), "San Justo", "Julian", 1, 3498526969.0 });
 
             migrationBuilder.InsertData(
                 table: "Propiedades",

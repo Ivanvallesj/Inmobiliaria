@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Inmobiliaria.Migrations
 {
     [DbContext(typeof(InmobiliariaContext))]
-    [Migration("20201211215632_MigracionInmbiliariaDebu")]
-    partial class MigracionInmbiliariaDebu
+    [Migration("20201217142702_Inmobilaria migration")]
+    partial class Inmobilariamigration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -249,8 +249,8 @@ namespace Inmobiliaria.Migrations
                     b.Property<double>("Cuit")
                         .HasColumnType("float");
 
-                    b.Property<double>("Dni")
-                        .HasColumnType("float");
+                    b.Property<int>("Dni")
+                        .HasColumnType("int");
 
                     b.Property<string>("Domicilio")
                         .IsRequired()
@@ -290,7 +290,7 @@ namespace Inmobiliaria.Migrations
                             CondicionIva = 2,
                             Cuil = 20361962595.0,
                             Cuit = 0.0,
-                            Dni = 36196259.0,
+                            Dni = 36196259,
                             Domicilio = "Juan Peron Y urquiza",
                             Email = "inmobiliariajuliandaniel@gmail.com",
                             EstadoCivil = 1,
